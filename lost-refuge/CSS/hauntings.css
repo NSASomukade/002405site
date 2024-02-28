@@ -1,0 +1,181 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  padding: 0px;
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hold {
+  background-color: white;
+  width: 100%;
+  padding: 10px 50px 10px 25px;
+  margin-right: 10px;
+}
+
+fieldset {
+  border: none;
+}
+
+textarea {
+  width: 100%;
+  margin: 10px 0 10px 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1em;
+}
+
+h2,
+h1 {
+  text-transform: uppercase;
+  margin-bottom: 0.5em;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-size: 0.7em;
+}
+h3 a {
+  text-decoration: none;
+}
+
+h2 a,
+h1 a {
+  text-decoration: none;
+  font-size: 0.5em;
+}
+
+h2 a:hover {
+  text-decoration: underline;
+}
+
+table {
+  text-align: left;
+  border: 1px solid #666;
+}
+
+table.hauntingsStats tr td {
+  width: 80%;
+}
+
+td {
+  width: 10%;
+  border: 1px solid #666;
+}
+
+tr:nth-child(even) {
+  background-color: #6666661a;
+}
+
+table.hauntingsStats tr th,
+tr.tophead th {
+  background-color: #66666680;
+  width: fit-content;
+}
+
+th {
+  width: 50%;
+  background-color: #66666680;
+}
+
+a,
+a:visited {
+  color: #0078d7;
+}
+
+.radio {
+  color: #666;
+  word-spacing: -0.4em;
+}
+
+.contain {
+  padding: 10px;
+  width: 31%;
+  margin: auto;
+  border: 2px double white;
+  height: 100%;
+}
+
+.radio > input[type="radio"]:checked,
+.radio > input[type="radio"]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+
+.radio > input[type="radio"]:checked + label {
+  padding: 1px;
+  color: black;
+}
+
+.radio > input[type="radio"]:not(:checked) + label {
+  padding: 1px;
+}
+
+input[type="radio"]:hover + label {
+  background-color: #0078d780;
+  color: white;
+  padding: 1px;
+}
+
+.slide {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+  opacity: 0;
+}
+.active-slide {
+  position: initial;
+  opacity: 1;
+  z-index: 2;
+}
+.quiz-container {
+  position: relative;
+  height: 200px;
+  margin-top: 40px;
+}
+
+.question {
+  width: 100%;
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+.answers {
+  text-align: left;
+  font-size: 0.8em;
+  display: block;
+  margin-bottom: 20px;
+}
+.answers label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 1500px) {
+  .contain {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .contain {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .contain {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .contain {
+    width: 100%;
+    margin: 0;
+  }
+}

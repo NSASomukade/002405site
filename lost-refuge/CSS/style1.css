@@ -1,0 +1,202 @@
+@font-face {
+  font-family: "Anaheim";
+  src: url(/FONTS/Anaheim/Anaheim-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Armata";
+  src: url(/FONTS/Armata/Armata-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-image: url(/IMAGES/otis-redding.png);
+  background-color: #141311;
+  color: #f1ece0;
+  font-family: "Anaheim", sans-serif;
+}
+
+::selection {
+  background-color: #f1ece0;
+  color: #141311;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Armata" sans-serif;
+  color: #e80037;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: #141311;
+  background-color: #e80037;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Armata" sans-serif;
+  color: inherit;
+  text-transform: uppercase;
+  font-size: inherit;
+}
+
+h5,
+h6 {
+  color: #7b7665;
+}
+
+button {
+  background: none;
+  border: 1px solid #e80037;
+  color: #e80037;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 5px;
+  margin: 5px 0px 5px 0px;
+  background-color: #1413118c;
+}
+
+button:hover {
+  background-color: #e8003680;
+  border-color: #e80037;
+  color: #f1ece0;
+  cursor: pointer;
+}
+
+hr {
+  border: none;
+  background-color: #e80037;
+  opacity: 0.5;
+}
+
+a {
+  color: #e80037;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f1ece0;
+  cursor: pointer;
+  background: none;
+}
+
+ul,
+ol {
+  font: inherit;
+  letter-spacing: inherit;
+}
+
+ul li {
+  font: inherit;
+  letter-spacing: inherit;
+}
+
+mark {
+  background-color: #a40f4080;
+  color: #f1ece0;
+}
+
+img {
+  image-rendering: pixelated;
+}
+
+address {
+  font-style: normal;
+}
+
+#banner {
+  image-rendering: pixelated;
+  background-image: url(/IMAGES/IMG_3145.png);
+}
+
+#logobox {
+  background-image: url(/IMAGES/crest.png);
+  image-rendering: pixelated;
+}
+
+#contentcard {
+  border: 1px solid #7b7665;
+  image-rendering: pixelated;
+}
+
+a #contentcard-caption {
+  color: #7b7665;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  border-top: 1px solid #7b7665;
+  background-color: #1413118c;
+  backdrop-filter: blur(2px);
+}
+
+a #contentcard-caption:hover {
+  color: #f1ece0;
+  border-top: 1px solid #e80037;
+  background-color: #e8003780;
+}
+
+#statuscafe {
+  border: 1px solid #e80037;
+  background-color: #1413118c;
+}
+
+#home {
+  background-color: #e8003642;
+}
+
+#nav {
+  border: none;
+}
+
+.separator {
+  border-bottom: 1px solid #e80037;
+}
+
+/* SPACEHEY RSS */
+p.feed-item-desc {
+  border-bottom: 2px solid #e8003780;
+}
+
+/* DROPDOWN */
+a.dropbtn {
+  background: none;
+  border: 1px solid #e80037;
+  color: #e80037;
+  font-weight: bolder;
+  text-transform: uppercase;
+  background-color: #1413118c;
+}
+
+a.dropbtn:hover {
+  background-color: #e8003680;
+  border-color: #e80037;
+  color: #f1ece0;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  background-color: #e8003680;
+  backdrop-filter: blur(5px);
+  border: 1px solid #e80037;
+  border-bottom: none;
+}
+
+.dropdown-content a {
+  color: #f1ece0;
+  border-bottom: 1px solid #e80037;
+}
+
+/* MAIN CONTENT STYLE*/
+.contentarea {
+  background-color: #1413118c;
+  border: 1px solid #e80037;
+}

@@ -1,0 +1,131 @@
+/* Melon's Gallery Maker! 0.0.2+ */
+.galleryindex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+/* Gallery Pages */
+#photos {
+  /* display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  max-height: min-content; */
+  column-count: 3;
+  column-gap: 1rem;
+}
+
+#photos figure {
+  margin: 10px;
+  max-width: min-content;
+  break-inside: avoid;
+}
+
+/* #photos img {
+  border: 1px solid #e80037;
+} */
+
+#photos span {
+  text-align: center;
+  display: block;
+}
+
+#photos figcaption {
+  padding: 10px 0px;
+}
+
+.page-links {
+  text-align: center;
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.page-links ul {
+  padding: 0px 5px;
+  margin: 10px 0px;
+  display: inline-block;
+}
+
+.page-links li {
+  border-radius: none;
+  padding: 5px;
+  background: none;
+  border: 1px solid #e80037;
+  color: #e80037;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #1413118c;
+}
+
+.page-links li:hover {
+  background-color: #e8003680;
+  border-color: #e80037;
+  color: #f1ece0;
+  cursor: pointer;
+}
+/* Mobile Styling */
+
+@media (max-width: 800px) {
+  body {
+    padding: 10px;
+  }
+
+  #photos figure {
+    width: 95%;
+    max-width: unset;
+  }
+
+  #photos img {
+    width: 100%;
+  }
+}
+
+/* Styling for JavaScript viewer (if enabled) */
+
+#js-viewer {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#js-viewer img {
+  max-width: 95%;
+  max-height: 80%;
+  height: auto;
+  width: auto;
+  border: 1px solid #e80037;
+  box-shadow: 0px 0px 10px #e8003780;
+  backdrop-filter: blur(25px);
+}
+
+#js-viewer span button {
+  border-radius: none;
+  padding: 5px;
+  background: none;
+  border: 1px solid #e80037;
+  color: #e80037;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #141311b3;
+}
+
+#js-viewer span {
+  margin-top: 10px;
+}
+
+#js-viewer span button:hover {
+  background-color: #e8003680;
+  border-color: #e80037;
+  color: #f1ece0;
+  cursor: pointer;
+}
