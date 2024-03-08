@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+<script src="avr/fontsampler.js"></script>
+<script src="avr/fontsampler-skin.js"></script>
+<link rel="stylesheet" href="avr/fontsampler-skin.css">
+
+</head>
+<body style="background-color:white;width:800px;height:auto">
+	
+
+<div id="demo" style="padding:10px;word-wrap:break-word"></div>
+
+<script>
+
+var options = {
+	initialText: "Click here and type",
+	
+	order: [["fontfamily", "alignment", "fontsize"], "tester", ["letterspacing", "lineheight"]],
+	
+	ui: {
+		
+		fontsize: {
+			init: 64,
+			unit: "px",
+			step: 32,
+			min: 32,
+			max: 96,
+		},
+		lineheight: {
+		    unit: "px",
+			init: 36,
+			step: 4,
+			min: 24,
+			max: 64,
+		},
+		
+		letterspacing: {
+			unit: "px",
+			step: 2,
+			min: 0,
+			max: 12,
+		},
+		
+		fontfamily: true
+	}
+}
+
+var fonts = [
+
+	{
+		name: "Cloude Regular",
+		files: ["avr/Cloude_Regular_1.046.woff2"]
+	},
+	
+    { 
+        name: "Cloude Semi-Bold", 
+        files: ["avr/Cloude_Regular_Bold_1.046.woff2"]
+	},
+	
+	{ 	
+		name: "Cloude RX (Regular)",
+		files: ["avr/CLoude_RX.woff2"]
+	},
+	
+	{
+		name: "Cloude RY (Regular)",
+		files: ["avr/Cloude_RY.woff2"]
+	},
+	
+	{
+		name: "Lieben Cloude (Regular)",
+		files: ["avr/Lieben_Cloude_Regular.woff2"]
+	},
+	
+	{
+		name: "Lieben Cloude (Bold)",
+		files: ["avr/Lieben_Cloude_Bold.woff2"]
+	}
+]
+var fs = new Fontsampler(document.getElementById("demo"), fonts, options)
+	FontsamplerSkin(fs)
+	fs.init()
+
+</script>
+	
+</body>
+</html>

@@ -1,0 +1,301 @@
+<head>
+  <title>LOST REFUGE | Layout Test No.50,000</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8" />
+  <meta name="referrer" content="no-referrer" />
+  <meta name="author" content="Lewis" />
+  <style>
+    @font-face {
+      font-family: "Anaheim";
+      src: url(/FONTS/Anaheim/Anaheim-Regular.ttf) format("truetype");
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: "Armata";
+      src: url(/FONTS/Armata/Armata-Regular.ttf) format("truetype");
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: "To The Sun";
+      src: url(/FONTS/vt323/VT323-Regular.ttf);
+    }
+
+    @font-face {
+      font-family: "Ancient Modern";
+      src: url(/FONTS/ancient-modern-tales/Ancient\ Modern\ Tales.otf);
+    }
+
+    @font-face {
+      font-family: "Blockstepped";
+      src: url(/FONTS/blockstepped/Blockstepped.ttf);
+    }
+
+    @font-face {
+      font-family: "Karma Future";
+      src: url(/FONTS/karma-future/KarmaFuture.ttf);
+    }
+
+    @font-face {
+      font-family: "Oxygen Mono";
+      src: url(/FONTS/oxygen-mono/OxygenMono-Regular.ttf);
+    }
+
+    @font-face {
+      font-family: "Ticketing";
+      src: url(/FONTS/TICKETING/Ticketing.ttf);
+    }
+
+    @font-face {
+      font-family: "VCR OSD Mono";
+      src: url(/FONTS/vcr-osd-mono/VCR_OSD_MONO.ttf);
+    }
+
+    @font-face {
+      font-family: "VT323";
+      src: url(/FONTS/vt323/VT323-Regular.ttf);
+    }
+
+    @font-face {
+      font-family: "Averrhoa";
+      src: url(/FONTS/averrhoa-italic-font-8px/AverrhoaItalic-Regular.ttf);
+    }
+
+    @font-face {
+      font-family: "Belandi";
+      src: url(/FONTS/belanidi-serif/BelanidiSerif-Regular.ttf);
+    }
+    @font-face {
+      font-family: "Cloude";
+      src: url(/FONTS/cloude/avr/Cloude_Regular_1.046.woff2);
+    }
+    @font-face {
+      font-family: "Dummy Text";
+      src: url(/FONTS/dummy-text-font/DummyText.ttf);
+    }
+    @font-face {
+      font-family: "E1234";
+      src: url(/FONTS/e1234-font/E1234.ttf);
+    }
+    @font-face {
+      font-family: "Healzone";
+      src: url(/FONTS/healzone-pixel-fonts/healzone-by-thUg-inc.ttf);
+    }
+    @font-face {
+      font-family: "Healzone Pixel";
+      src: url(/FONTS/healzone-pixel-fonts/healzone-pixel-by-thUg-inc.ttf);
+    }
+    @font-face {
+      font-family: "Oldtimer";
+      src: url(/FONTS/oldtimer-font/Oldtimer.ttf);
+    }
+    @font-face {
+      font-family: "Sedimenti";
+      src: url(/FONTS/sedimenti-typeface/Sedimenti-Typeface/Sedimenti-Regular.otf);
+    }
+
+    * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+
+    div {
+      background: #0000001a;
+    }
+    .sidebar {
+      height: 100%;
+      width: 15%;
+    }
+
+    .main {
+      width: 85%;
+      padding-left: 5%;
+    }
+
+    .container {
+      height: 100%;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 0.8fr 1.2fr 1.1fr 0.8fr 1.8fr 0.3fr;
+      gap: 15px 10px;
+      grid-template-areas:
+        "header header header header header header header"
+        "header header header header header header header"
+        "greeting greeting greeting greeting updates updates updates"
+        "cool-sites cool-sites latest latest latest status status"
+        "cool-sites cool-sites latest latest latest appreciation appreciation"
+        "idioms idioms idioms moon extras extras extras"
+        "footer footer footer footer footer footer footer";
+    }
+    .header {
+      grid-area: header;
+    }
+    .greeting {
+      grid-area: greeting;
+    }
+    .updates {
+      grid-area: updates;
+    }
+    .cool-sites {
+      grid-area: cool-sites;
+    }
+    .latest {
+      grid-area: latest;
+    }
+    .status {
+      grid-area: status;
+    }
+    .appreciation {
+      grid-area: appreciation;
+    }
+    .idioms {
+      grid-area: idioms;
+    }
+    .moon {
+      grid-area: moon;
+    }
+    .extras {
+      grid-area: extras;
+    }
+    .footer {
+      grid-area: footer;
+    }
+
+    [class*="col-"] {
+      /* float: left; */
+      padding: 15px;
+      border: 1px solid red;
+    }
+
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+
+    @media only screen and (min-width: 600px) {
+      /* For tablets: */
+      .col-s-1 {
+        width: 8.33%;
+      }
+      .col-s-2 {
+        width: 16.66%;
+      }
+      .col-s-3 {
+        width: 25%;
+      }
+      .col-s-4 {
+        width: 33.33%;
+      }
+      .col-s-5 {
+        width: 41.66%;
+      }
+      .col-s-6 {
+        width: 50%;
+      }
+      .col-s-7 {
+        width: 58.33%;
+      }
+      .col-s-8 {
+        width: 66.66%;
+      }
+      .col-s-9 {
+        width: 75%;
+      }
+      .col-s-10 {
+        width: 83.33%;
+      }
+      .col-s-11 {
+        width: 91.66%;
+      }
+      .col-s-12 {
+        width: 100%;
+      }
+    }
+
+    @media only screen and (min-width: 768px) {
+      /* For desktop: */
+      .col-1 {
+        width: 8.33%;
+      }
+      .col-2 {
+        width: 16.66%;
+      }
+      .col-3 {
+        width: 25%;
+      }
+      .col-4 {
+        width: 33.33%;
+      }
+      .col-5 {
+        width: 41.66%;
+      }
+      .col-6 {
+        width: 50%;
+      }
+      .col-7 {
+        width: 58.33%;
+      }
+      .col-8 {
+        width: 66.66%;
+      }
+      .col-9 {
+        width: 75%;
+      }
+      .col-10 {
+        width: 83.33%;
+      }
+      .col-11 {
+        width: 91.66%;
+      }
+      .col-12 {
+        width: 100%;
+      }
+    }
+
+    .row {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: row nowrap;
+    }
+
+    html,
+    body {
+      height: 100%;
+    }
+
+    body {
+      display: flex;
+      flex-flow: row nowrap;
+    }
+  </style>
+</head>
+<body>
+  <div class="row">
+    <div class="col-2 col-s-2"></div>
+    <div class="col-10">
+      <div class="row">
+        <div class="col-1"></div>
+        <div class="col-9 container" style="margin: auto">
+          <div class="header"></div>
+          <div class="greeting"></div>
+          <div class="updates"></div>
+          <div class="cool-sites"></div>
+          <div class="latest"></div>
+          <div class="status"></div>
+          <div class="appreciation"></div>
+          <div class="idioms"></div>
+          <div class="moon"></div>
+          <div class="extras"></div>
+          <div class="footer"></div>
+        </div>
+        <div class="col-2"></div>
+      </div>
+    </div>
+  </div>
+</body>

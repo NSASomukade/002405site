@@ -1,11 +1,20 @@
 * {
   box-sizing: border-box;
   padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
 }
 
 body {
   overflow-x: hidden;
   font-size: 15px;
+  margin: 0;
+  display: flex;
+  flex-flow: row nowrap;
 }
 
 h1,
@@ -25,19 +34,45 @@ h1 {
 }
 
 h2 {
-  font-size: 20px;
-  width: 150%;
-  padding: 0;
+  font-size: 1.4em;
+  width: 100%;
+  padding: 2px;
 }
 
 h3,
 h4,
 h5,
-h6,
+h6 {
+  line-height: 50%;
+  letter-spacing: 2px;
+  margin: 0px;
+  font-size: 0.9em;
+}
+
 [role="columnheader"] {
   line-height: 120%;
   letter-spacing: 2px;
-  margin: 0px;
+  font-size: 0.9em;
+  margin: 2px;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: end;
+  align-content: space-between;
+}
+
+main {
+  width: 85%;
+  padding: 15px;
+  padding-left: 10%;
+}
+
+aside {
+  height: 100%;
+  width: 15%;
 }
 
 nav,
@@ -95,6 +130,7 @@ ul li {
   width: 100%;
   text-align: left;
   margin-top: 5px;
+  border-collapse: collapse;
 }
 
 .row {
@@ -115,20 +151,71 @@ ul li {
   margin: 15px auto;
   width: 95%;
   padding: 15px;
-  overflow-y: hidden;
+  overflow: hidden;
   height: 880px;
 }
 
-.dashboard {
-  display: grid;
-  grid-template-columns: auto auto auto auto auto auto;
-  grid-template-rows: auto auto 29% auto;
-  grid-gap: 0 1.67%;
-  margin: 15px auto;
-  width: 95%;
-  height: 880px;
+.blogplate {
+  width: 30%;
   padding: 15px;
   overflow: hidden;
+  height: 880px;
+  flex-grow: 10;
+}
+
+.container {
+  width: 80%;
+  height: 100%;
+  padding: 20px;
+}
+
+.home {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 0.8fr 1.2fr 1.1fr 0.8fr 1.8fr 0.3fr;
+  gap: 15px 10px;
+  grid-template-areas:
+    "header header header header header header header"
+    "header header header header header header header"
+    "greeting greeting greeting greeting updates updates updates"
+    "cool-sites cool-sites latest latest latest status status"
+    "cool-sites cool-sites latest latest latest appreciation appreciation"
+    "idioms idioms idioms widget extras extras extras"
+    "footer footer footer footer footer footer footer";
+}
+
+.header {
+  grid-area: header;
+}
+.greeting {
+  grid-area: greeting;
+}
+.updates {
+  grid-area: updates;
+}
+.cool-sites {
+  grid-area: cool-sites;
+}
+.latest {
+  grid-area: latest;
+}
+.status {
+  grid-area: status;
+}
+.appreciation {
+  grid-area: appreciation;
+}
+.idioms {
+  grid-area: idioms;
+}
+.widget {
+  grid-area: widget;
+}
+.extras {
+  grid-area: extras;
+}
+.footer {
+  grid-area: footer;
 }
 
 .contain {
@@ -156,15 +243,6 @@ p {
   max-width: 100%;
   overflow-x: auto;
   padding: 0.5em;
-}
-
-.latest {
-  grid-column: 1 / 5;
-  grid-row: 2 / 3;
-}
-
-.status {
-  grid-column: 3 / 5;
 }
 
 .dashboard > div:last-of-type {
