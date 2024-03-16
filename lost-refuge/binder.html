@@ -33,7 +33,7 @@
       </ul>
     </nav>
   </aside>
-  <main class="col-10 col-s-10">
+  <main id="main" class="col-10 col-s-10">
     <h1 style="margin-bottom: 1%"><span id="home">Lost Refuge</span> \ binder</h1>
     <div class="binder">
       <div class="plate">
@@ -60,4 +60,23 @@
       <div></div>
     </div>
   </main>
+  <a href="javascript:void(0)" id="close-nav" class="nav-toggle plate" onclick="closeNav()">&times;</a>
+    <div class="nav-toggle plate" id="open-nav" onclick="openNav()">&#9776;</div>
+    <script>
+      function openNav() {
+        document.getElementById("navigation").style.display = "initial";
+        document.getElementById("close-nav").style.display = "initial";
+        document.getElementById("open-nav").style.display = "none";
+        document.getElementById("main").style.display = "none";
+      }
+
+      /* Set the width of the sidebar to 0 (hide it) */
+      function closeNav() {
+        document.getElementById("navigation").style.display = "none";
+        document.getElementById("close-nav").style.display = "none";
+        document.getElementById("open-nav").style.display = "initial";
+        document.getElementById("main").style.display = "initial";
+      }
+    </script>
+  </body>
 </body>
