@@ -11,7 +11,7 @@
   </head>
   <body class="row">
     <div class="spacer col-1 col-s-1"></div>
-    <aside class="col-1 col-s-1">
+    <aside id="navigation" class="col-1 col-s-2">
       <nav>
         <ul>
           <li><a href="/home.html">home</a></li>
@@ -35,12 +35,12 @@
     <main class="col-10 col-s-10">
       <div class="col-10 dash plate container">
         <div class="plate">
-          <h1><a href="/home.html" id="home">Lost Refuge</a> \ links & Networking</h1>
+          <h1><a href="/home.html" id="home">Lost Refuge</a> \ links</h1>
           <div class="text"><p>I'm a bit of a collector. Anything I think is interesting, want to look at later, have already looked and and want to look at again, or think could even be marginally useful goes into the bookmarks bar. This has resulted in... a ton of shit. Most of which I don't even use myself. Browse around, see if there's anything you need. Let me know if there's a more efficient/better site for something I've listed here (side-eyeing YTMP3+) it's not like I'm emotionally attached and I do love maximum efficiency. I'll replace anything on here that doesn't quite meet those standards.</p></div>
         </div>
         <div class="plate">
           <div class="text">
-            <p>I don't have any buttons or neighbors yet<span title="I don't really know what constitutes a neighbor on neocities...">(?)</span>... but when I do I'll put them here!</p>
+            <p>I don't have any buttons or neighbors yet<span data-tooltip="I don't really know what makes a neighbor..." data-flow="top">(?)</span>... but when I do I'll put them here!</p>
           </div>
         </div>
         <div class="link-stretch">
@@ -231,5 +231,21 @@
         </div>
       </div>
     </main>
+    <a href="javascript:void(0)" id="close-nav" class="nav-toggle plate" onclick="closeNav()">&times;</a>
+    <div class="nav-toggle plate" id="open-nav" onclick="openNav()">&#9776;</div>
+    <script>
+      function openNav() {
+        document.getElementById("navigation").style.display = "initial";
+        document.getElementById("close-nav").style.display = "initial";
+        document.getElementById("open-nav").style.display = "none";
+      }
+
+      /* Set the width of the sidebar to 0 (hide it) */
+      function closeNav() {
+        document.getElementById("navigation").style.display = "none";
+        document.getElementById("close-nav").style.display = "none";
+        document.getElementById("open-nav").style.display = "initial";
+      }
+    </script>
   </body>
 </html>

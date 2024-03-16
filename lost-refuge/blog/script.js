@@ -14,9 +14,9 @@
 
 //==[ 1. BASIC INFO ]==
 
-let blogName = "The Lost Refuge's blog";
+let blogName = "The Lost Refuge blog";
 let authorName = "002405";
-let authorLink = ""; // Enter your website, social media, etc. Some way for people to tell you they like your blog! (Leaving it empty is okay too)
+let authorLink = "";
 
 //-----------------------------
 
@@ -29,13 +29,11 @@ let authorLink = ""; // Enter your website, social media, etc. Some way for peop
   alter the scripts if you want to use a different naming convention*/
 /*UPDATE: as of version 1.3, you may omit the date if you would like. But if you
   use a date it must still follow that format.*/
+//[ "posts/2020-11-10-Special-Characters-Example.html", encodeURI( 'Spéci@l "Character\'s" Examp|e' ) ],
+//[ "posts/2020-11-10-My-Third-Post-Example.html" ],
+//[ "posts/2020-11-10-My-Second-Post-Example.html" ],
 
-let postsArray = [
-  //[ "posts/2020-11-10-Special-Characters-Example.html", encodeURI( 'Spéci@l "Character\'s" Examp|e' ) ],
-  //[ "posts/2020-11-10-My-Third-Post-Example.html" ],
-  //[ "posts/2020-11-10-My-Second-Post-Example.html" ],
-  ["posts/11-10-2020-Post-Template.html"],
-];
+let postsArray = [["posts/03-10-2024-ANLYS-Poetry-15-Fan Letter.html", encodeURI('[ANLYS]; 15. "Fan Letter"')]];
 
 //XXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
@@ -50,27 +48,18 @@ let postsArray = [
 //==[ 3. GENERATING THE HTML SECTIONS TO BE INSERTED ]==
 
 let url = window.location.pathname;
-
-//The date format to look for is 2 digits, hyphen, 2 digits, hyphen, 4 digits, hyphen.
 const postDateFormat = /\d{2}\-\d{2}\-\d{4}\-/;
-
-//Check if you are in posts (if so, the links will have to go up a directory)
 let relativePath = ".";
 if (url.includes("posts/")) {
   relativePath = "..";
 }
 
-//Generate the Header HTML, a series of list items containing links.
 let headerHTML = '<a href="' + relativePath + '/index.html">Home</a>' + '<a href="' + relativePath + '/archive.html">Archive</a>' + '<a href="/about.html">About</a>';
 
-//Generate the Footer HTML, which uses the variables defined in the BASIC INFO section above to list info about the site.
-//Note: feel free to remove the references to Zonelets and Neocities! Just be careful not to delete any necessary HTML closing tags or other syntax.
 let footerHTML = "<hr><p>" + blogName + " is built with <a href='https://zonelets.net/'>Zonelets</a>.";
 
-//To do the following stuff, we want to know where we are in the posts array (if we're currently on a post page).
 let currentIndex = -1;
 let currentFilename = url.substring(url.lastIndexOf("posts/"));
-//Depending on the web server settings (Or something?), the browser url may or may not have ".html" at the end. If not, we must add it back in to match the posts array. (12-19-2022 fix)
 if (!currentFilename.endsWith(".html")) {
   currentFilename += ".html";
 }
@@ -81,8 +70,6 @@ for (i = 0; i < postsArray.length; i++) {
   }
 }
 
-//Convert the post url to readable post name. E.g. changes "2020-10-10-My-First-Post.html" to "My First Post"
-//Or pass along the "special characters" version of the title if one exists
 function formatPostTitle(i) {
   // Check if there is an alternate post title
   if (postsArray[i].length > 1) {
@@ -90,7 +77,7 @@ function formatPostTitle(i) {
     return decodeURI(postsArray[i][1]);
   } else {
     //If there is no alternate post title, check if the post uses the date format or not, and return the proper title
-    if (postDateFormat.test(postsArray[i][0].slice(6, 18))) {
+    if (postDateFormat.test(postsArray[i][0].slice(6, 17))) {
       return postsArray[i][0].slice(17, -5).replace(/-/g, " ");
     } else {
       return postsArray[i][0].slice(6, -5).replace(/-/g, " ");

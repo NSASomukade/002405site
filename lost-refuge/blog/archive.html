@@ -7,12 +7,19 @@
     <link href="/CSS/style2.css" rel="stylesheet" />
   </head>
   <body class="row">
-    <aside class="col-2 col-s-1 plate">
+    <aside id="navigation" class="col-2 col-s-3 plate">
       <div class="blog">
         <div class="plate">
           <h2><a href="/home.html" id="home">Lost Refuge</a> \ Blog</h2>
           <div class="text">
-            <p>I'm a bit of a collector. Anything I think is interesting, want to look at later, have already looked and and want to look at again, or think could even be marginally useful goes into the bookmarks bar. This has resulted in... a ton of shit. Most of which I don't even use myself. Browse around, see if there's anything you need. Let me know if there's a more efficient/better site for something I've listed here (side-eyeing YTMP3+) it's not like I'm emotionally attached and I do love maximum efficiency. I'll replace anything on here that doesn't quite meet those standards.</p>
+            <p>I have a few types of posts I make consistently, and I try to include the 'type' in the title so that people can know what they might be getting into; here's a key to that:</p>
+            <p>
+              <b>[ANLYS]</b> indicate analysis blogs, where I try to explain why I like things.
+              <br />
+              <b>[PERSN]</b> are personal blogs; things I'm thinking about, emotions I'm having. Be aware that content likely will not be warned for.
+              <br />
+              <b>[MISC.]</b> will just be things I can't fit in either of those categories. I can't tell you what to expect.
+            </p>
           </div>
         </div>
         <div class="plate" style="display: flex; flex-direction: column">
@@ -28,7 +35,7 @@
         <div id="footer"></div>
       </div>
     </aside>
-    <main class="col-10 col-s-11">
+    <main id="main" class="col-10 col-s-9">
       <div class="plate" id="container">
         <div id="content">
           <h1>Blog Post Archive</h1>
@@ -38,7 +45,24 @@
       </div>
     </main>
     <!-- end of div id="container" -->
+    <a href="javascript:void(0)" id="close-nav" class="nav-toggle plate" onclick="closeNav()">&times;</a>
+    <div class="nav-toggle plate" id="open-nav" onclick="openNav()">&#9776;</div>
+    <script>
+      function openNav() {
+        document.getElementById("navigation").style.display = "initial";
+        document.getElementById("close-nav").style.display = "initial";
+        document.getElementById("open-nav").style.display = "none";
+        document.getElementById("main").style.display = "none";
+      }
 
+      /* Set the width of the sidebar to 0 (hide it) */
+      function closeNav() {
+        document.getElementById("navigation").style.display = "none";
+        document.getElementById("close-nav").style.display = "none";
+        document.getElementById("open-nav").style.display = "initial";
+        document.getElementById("main").style.display = "initial";
+      }
+    </script>
     <!-- Here's the link to our JavaScript! -->
     <script src="./script.js"></script>
   </body>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Poetry; 15. "Fan Letter"</title>
+    <link rel="icon" href="../images/favicon.png" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <link href="/CSS/style2.css" rel="stylesheet" />
+  </head>
+  <body class="row">
+    <aside id="navigation" class="col-2 col-s-4 plate">
+      <div class="blog">
+        <div class="plate">
+          <h2><a href="/home.html" id="home">Lost Refuge</a> \ Blog</h2>
+          <div class="text">
+            <p>I have a few types of posts I make consistently, and I try to include the 'type' in the title so that people can know what they might be getting into; here's a key to that:</p>
+            <p>
+              <b>[ANLYS]</b> indicate analysis blogs, where I try to explain why I like things.
+              <br />
+              <b>[PERSN]</b> are personal blogs; things I'm thinking about, emotions I'm having. Be aware that content likely will not be warned for.
+              <br />
+              <b>[MISC.]</b> will just be things I can't fit in either of those categories. I can't tell you what to expect.
+            </p>
+          </div>
+        </div>
+        <div class="plate" style="display: flex; flex-direction: column">
+          <h2>Recent Posts</h2>
+          <div class="text" style="display: flex; flex-direction: column; justify-content: space-between">
+            <ul id="recentpostlistdiv"></ul>
+            <div>
+              <div id="header"></div>
+              <div id="nextprev"></div>
+            </div>
+          </div>
+        </div>
+        <div id="footer"></div>
+      </div>
+    </aside>
+    <main id="main" class="col-10 col-s-8">
+      <div class="plate" id="container" style="display: flex; flex-flow: column">
+        <h1>[ANLYS] Poetry; 15. "Fan Letter"</h1>
+        <h3>Mar 10, 2024</h3>
+        <div class="text blg-content" id="content">
+          <h4>15. (Fan Letter)</h4>
+          <p>
+            I went to your exhibit last night,<br />
+            saw the installation where you'd taken<br />
+            your own weight and your lover's<br />
+            before he'd died of AIDS and made<br />
+            the pile of silver licorice snaps<br />
+            that matched the 355 pounds exactly<br />
+            <br />
+            I loved the way the candy<br />
+            spilled from the corner of two white walls,<br />
+            and I was about to talk away<br />
+            when the guard explained that the artist<br />
+            asked everyone to take a piece with him.<br />
+            I thanked her but said I couldn't,<br />
+            didn't want to ruin all your hard work.<br />
+            <br />
+            Later on, after I'd left the gallery,<br />
+            I stood outside to get one last look<br />
+            when I saw a man bent over your sculpture<br />
+            popping piece after piece in his mouth,<br />
+            chewing and sobbing.<br />
+            <br />
+            I want to tell you that<br />
+            if I could go back now, I'd take<br />
+            as much of the licorice with me as I could.<br />
+            I'd do exactly what you wanted.<br />
+          </p>
+          <hr />
+          <br />
+          <p>This poem, written by James Crews, references a sculpture by <a href="https://www.felixgonzalez-torresfoundation.org/works/untitled-lover-boys2" target="_self" rel="ugc">Felix Gonzalez-Torres called "Untitled (Lover Boys)"</a>. It is exactly as the poem describes; a 355lbs pile of silver licorice in a corner of a museum (I don't know which one, the installation is displayed in several different museums).</p>
+          <p>The most striking image for me in this poem is the man hunched over the sculpture, taking candy from the pile. It initially fascinated me because, as someone who values control over his own reactions, I can only <em>imagine</em> the kind of emotion that would drive someone to react like that publicly, while a guard stands by. How would that guard have felt? Is that something she's seen before? How often? Does she comfort those who need them or give them the privacy to grieve with the sculpture.</p>
+          <p>One of my favorite themes in poetry is also the act of consumption as a love language. Of course we all know "the quickest way to a man's heart is through his stomach" but poems that describe that more viscerally - cannibalism and tearing apart the people you love with your teeth - are some of my favorites. Horror as romance is beautiful to me.</p>
+          <p>I think this poem - and the actions taken by the man - absolutely qualify for that. His consumption of the sculpture, the emotion he shows while doing so, is <em>visceral</em> in that same way accomplished by cannibalism metaphors in other poems. I'm not sure I have the words to describe it quite the way I want to (I'm hoping to get better at analysis by doing this little series) but the very real imagery - not a metaphor or allusion but genuine lived experience - makes it both gentler and more impactful.</p>
+          <p>The other part that strikes me "if i could go back now, I'd take/as much of the licorice with me as I could." I don't know anything about James Crews, so I can't speculate about how this sculpture relates to him - whether or not he had someone important to him suffer from AIDS - but there are two ways that I personally take this closing stanza.</p>
+          <p>A) Respect of the struggles that others went through; showing solidarity, or support, for those who have suffered by partaking in the sculpture.</p>
+          <p>B) Allowing space for his own grief; releasing the concern of 'ruining hard work' to instead engage with the installation as intended.</p>
+          <p>That's all I have to say on this poem. I'm hoping I can do one of these every few days. They will probably be low effort but I'm trying to teach myself how to properly touch-type &amp; communicate my own thoughts and feelings on things.</p>
+        </div>
+      </div>
+    </main>
+    <a href="javascript:void(0)" id="close-nav" class="nav-toggle plate" onclick="closeNav()">&times;</a>
+    <div class="nav-toggle plate" id="open-nav" onclick="openNav()">&#9776;</div>
+    <script>
+      function openNav() {
+        document.getElementById("navigation").style.display = "initial";
+        document.getElementById("close-nav").style.display = "initial";
+        document.getElementById("open-nav").style.display = "none";
+        document.getElementById("main").style.display = "none";
+      }
+
+      /* Set the width of the sidebar to 0 (hide it) */
+      function closeNav() {
+        document.getElementById("navigation").style.display = "none";
+        document.getElementById("close-nav").style.display = "none";
+        document.getElementById("open-nav").style.display = "initial";
+        document.getElementById("main").style.display = "initial";
+      }
+    </script>
+    <!-- Here's the link to our JavaScript! -->
+    <script src="../script.js"></script>
+  </body>
+</html>

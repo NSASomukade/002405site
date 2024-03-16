@@ -11,7 +11,7 @@
   </head>
   <body class="row">
     <div class="spacer col-1 col-s-1"></div>
-    <aside class="col-1 col-s-1">
+    <aside id="navigation" class="col-1 col-s-2">
       <nav>
         <ul>
           <li><a href="/home.html">home</a></li>
@@ -40,125 +40,19 @@
         </header>
         <div class="grid-greeting">
           <h2>Welcome</h2>
-          <h3>a date</h3>
-          <p>text</p>
+          <div class="text">
+            <p>Hey there, welcome to my site. There's a nav bar to the left, some empty space to the right, and a whole lot of stuff inbetween. If you see anything you like, let me know. If you see anything you don't like you can still let me know. Expect to see digital art, writing, and a <span data-tooltip="I almost said 'shit-ton' here... case in point." data-flow="top">whole lot</span> of swearing.</p>
+          </div>
         </div>
         <div class="grid-updates">
           <h2>Updates</h2>
+          <h3><time datetime="2024-03-10">03.10.24</time></h3>
+          <div class="text">
+            <p>I'm actually happy with the layout this time. Pinky promise. I had to get something colorful enough while also using ONLY colors I curated, AND adhering to my intense love of dark mode. It should be mostly mobile compatible... at least moreso than the last attempt. I still need to add content in some places and there might be a handful of broken links but we are on our fucking way.</p>
+          </div>
         </div>
         <div class="grid-cool-sites">
           <h2>Cool Sites</h2>
-        </div>
-        <div class="grid-latest">
-          <h2>Latest Pages & Posts</h2>
-        </div>
-        <div class="grid-status">
-          <h2>Status</h2>
-        </div>
-        <div class="grid-appreciation">
-          <h2>Appreciation</h2>
-        </div>
-        <div class="grid-idioms">
-          <h2>Idiom of the Day</h2>
-        </div>
-        <div class="grid-widget">
-          <h2>The Moon</h2>
-        </div>
-        <div class="grid-extras">
-          <div>...</div>
-        </div>
-        <div class="grid-footer"></div>
-      </div>
-      <div class="col-2"></div>
-    </main>
-  </body>
-  <!-- <body>
-    <main style="display: flex; flex-flow: row nowrap; justify-content: center">
-      <nav>
-        <a href="/home.html">home</a><br />
-        <a href="/about.html">about</a><br />
-        <a href="/blog/index.html">blog</a><br />
-        <hr />
-        <a href="/binder.html">binder</a> <br />
-        <a href="/commonplace.html">commonplace</a><br />
-        <a href="/playground.html">playground</a> <br />
-        <hr />
-        <a href="/gallery/index.html">gallery </a><br />
-        <a href="/notebook.html">writing</a> <br />
-        <a href="/comms.html">commissions</a> <br />
-        <hr />
-        <a href="/links.html">links</a> <br />
-        <a href="/credits.html">credits</a> <br />
-        <a href="/sitemap.html">sitemap</a>
-      </nav>
-      <div class="dashboard">
-        <header>
-          <img src="/IMAGES/crest.png" />
-          <h1><a href="#" id="home">Lost Refuge</a> \ home</h1>
-        </header>
-        <div class="contain latest">
-          <h2>// greeting</h2>
-          <div class="text">
-            <p>Hey there, welcome to my site. There's a nav bar to the left, some empty space to the right, and a whole lot of stuff inbetween. If you see anything you like, let me know. If you see anything you don't like you can still let me know. Expect to see digital art, writing, and a <span title="I almost said 'shit-ton' here... case in point.">whole lot</span> of swearing.</p>
-          </div>
-        </div>
-
-        <div class="contain" style="grid-column: 5 / 7">
-          <h2>// Updates <small>(scrolling)</small></h2>
-          <div class="text" style="overflow-y: scroll; width: 105%">
-            <h3><time datetime="2024-01-26">01.26.24</time></h3>
-            <p>I've learned my lesson. If you're using Melonking's gallery maker do NOT attempt to add any code in the .txt file... this is probably obvious, however, I am both stubborn and love trying ill-advised things <3</p>
-            <hr />
-            <h3><time datetime="2024-01-26">01.26.24</time></h3>
-            <p>I've learned my lesson. If you're using Melonking's gallery maker do NOT attempt to add any code in the .txt file... this is probably obvious, however, I am both stubborn and love trying ill-advised things <3</p>
-            <br />
-          </div>
-        </div>
-
-        <div class="contain" style="grid-column: 1 / 4">
-          <h2>// Recent pages and posts</h2>
-          <div class="table-wrap">
-            <div class="table" role="table">
-              <div class="row" role="row">
-                <div class="cell" role="columnheader">Date</div>
-                <div class="cell" role="columnheader">Title</div>
-                <div class="cell" role="columnheader">Desc.</div>
-              </div>
-              <a class="row" role="row" href="/blog/personal/02082024.html">
-                <div class="cell" role="cell">02.08.2024</div>
-                <div class="cell" role="cell">Untitled Blog Post</div>
-                <div class="cell" role="cell">Personal blog.</div>
-              </a>
-              <a class="row" role="row">
-                <div class="cell" role="cell">...</div>
-                <div class="cell" role="cell">...</div>
-                <div class="cell" role="cell">...</div>
-              </a>
-              <a class="row" role="row">
-                <div class="cell" role="cell">...</div>
-                <div class="cell" role="cell">...</div>
-                <div class="cell" role="cell">...</div>
-              </a>
-              <a class="row" role="row">
-                <div class="cell" role="cell">...</div>
-                <div class="cell" role="cell">...</div>
-                <div class="cell" role="cell">...</div>
-              </a>
-              <a class="row" role="row">
-                <div class="cell" role="cell">...</div>
-                <div class="cell" role="cell">...</div>
-                <div class="cell" role="cell">...</div>
-              </a>
-              <a class="row" role="row">
-                <div class="cell" role="cell">...</div>
-                <div class="cell" role="cell">...</div>
-                <div class="cell" role="cell">...</div>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="contain" style="grid-column: 4 / 6">
-          <h2>// Cool Sites</h2>
           <div class="tiles">
             <a href="https://blanketfort.neocities.org/" target="_blank" rel="external"><img src="IMAGES/stamps/site buttons/88x31 blanket fort ani.gif" alt="Blanket Fort" /></a>
             <a href="https://corru.observer/" target="_blank" rel="external"><img src="IMAGES/stamps/site buttons/8831.gif" alt="corru.observer" /></a>
@@ -175,13 +69,87 @@
           </div>
           <center>Visit <a href="links.html">this page</a> for more interesting links!</center>
         </div>
-        <div class="contain moon">
-          <h2>Skyless Moon</h2>
+        <div class="grid-latest">
+          <h2>Latest Pages & Posts</h2>
+          <div class="table-wrap">
+            <div class="table" role="table">
+              <div class="trow" role="row">
+                <div class="cell" role="columnheader">Date</div>
+                <div class="cell" role="columnheader">Title</div>
+                <div class="cell" role="columnheader">Desc.</div>
+              </div>
+              <a class="trow" role="row" href="/binder/hauntingsquiz/survey.html">
+                <div class="cell" role="cell">03.16.2024</div>
+                <div class="cell" role="cell">Why Are You Haunted?</div>
+                <div class="cell" role="cell">A survey</div>
+              </a>
+              <a class="trow" role="row" href="/blog/posts/03-10-2024-ANLYS-Poetry-15-Fan Letter.html">
+                <div class="cell" role="cell">03.10.2024</div>
+                <div class="cell" role="cell">[ANLYS] 15. "Fan Letter"</div>
+                <div class="cell" role="cell">Cross-post from SpaceHey</div>
+              </a>
+              <a class="trow" role="row">
+                <div class="cell" role="cell">...</div>
+                <div class="cell" role="cell">...</div>
+                <div class="cell" role="cell">...</div>
+              </a>
+              <a class="trow" role="row">
+                <div class="cell" role="cell">...</div>
+                <div class="cell" role="cell">...</div>
+                <div class="cell" role="cell">...</div>
+              </a>
+              <a class="trow" role="row">
+                <div class="cell" role="cell">...</div>
+                <div class="cell" role="cell">...</div>
+                <div class="cell" role="cell">...</div>
+              </a>
+              <a class="trow" role="row">
+                <div class="cell" role="cell">...</div>
+                <div class="cell" role="cell">...</div>
+                <div class="cell" role="cell">...</div>
+              </a>
+              <a class="trow" role="row">
+                <div class="cell" role="cell">...</div>
+                <div class="cell" role="cell">...</div>
+                <div class="cell" role="cell">...</div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="grid-status">
+          <h2>
+            Status <a href="https://www.imood.com/users/2405"><img src="https://moods.imood.com/display/uname-2405/fg-daad00/trans-1/imood.gif" alt="The current mood of 2405 at www.imood.com" border="0" /></a>
+          </h2>
+          <div class="text" id="statuscafe">
+            <div id="statuscafe-username"></div>
+            <div id="statuscafe-content"></div>
+          </div>
+          <script src="https://status.cafe/current-status.js?name=2405" defer></script>
+        </div>
+        <div class="grid-appreciation">
+          <h2>Appreciation</h2>
+          <h3><time datetime="2024-02-05">02.05.24</time></h3>
+          <div class="text">
+            <p>My favorite author gave me permission to complete a project based off of her work :) I'm ver excited.</p>
+          </div>
+        </div>
+        <div class="grid-idioms">
+          <h2>Idiom of the Day</h2>
+          <div class="text">
+            <script language="JavaScript" src="https://feedroll.com/rssviewer/feed2js.php?src=https%3A%2F%2Fwww.thefreedictionary.com%2F_%2FWoD%2Frss.aspx%3Ftype%3Didiom&num=1&desc=1&utf=y&css=idiom" charset="UTF-8" type="text/javascript"></script>
+
+            <noscript>
+              <a href="https://feedroll.com/rssviewer/feed2js.php?src=https%3A%2F%2Fwww.thefreedictionary.com%2F_%2FWoD%2Frss.aspx%3Ftype%3Didiom&num=1&desc=1&utf=y&css=idiom&html=y">View RSS feed</a>
+            </noscript>
+          </div>
+        </div>
+        <div class="grid-widget">
+          <h2>The Moon</h2>
           <div id="contain_moon">
             <div></div>
-            <div style="filter: drop-shadow(0 0 39px rgb(61, 41, 100))"></div>
             <div>.</div>
             <div style="font-size: small">.</div>
+            <div style="filter: drop-shadow(0 0 39px rgb(61, 41, 100))"></div>
           </div>
           <script>
             (function () {
@@ -204,40 +172,43 @@
             })();
           </script>
         </div>
-        <div class="contain" style="grid-column: 1 / 3">
-          <h2>// Idiom of the Day</h2>
-          <div class="text" style="overflow-y: scroll; width: 105%">
-            <script language="JavaScript" src="https://feedroll.com/rssviewer/feed2js.php?src=https%3A%2F%2Fwww.thefreedictionary.com%2F_%2FWoD%2Frss.aspx%3Ftype%3Didiom&num=1&desc=1&utf=y&css=idiom" charset="UTF-8" type="text/javascript"></script>
-
-            <noscript>
-              <a href="https://feedroll.com/rssviewer/feed2js.php?src=https%3A%2F%2Fwww.thefreedictionary.com%2F_%2FWoD%2Frss.aspx%3Ftype%3Didiom&num=1&desc=1&utf=y&css=idiom&html=y">View RSS feed</a>
-            </noscript>
-          </div>
+        <div class="grid-extras">
+          <div>...</div>
         </div>
-        <div class="contain status">
-          <h2>// Status</h2>
-          <div class="text">
-            <a href="https://www.imood.com/users/2405"><img src="https://moods.imood.com/display/uname-2405/fg-e80037/trans-1/imood.gif" alt="The current mood of 2405 at www.imood.com" border="0" /></a>
-            <div id="statuscafe">
-              <div id="statuscafe-username"></div>
-              <div id="statuscafe-content"></div>
-            </div>
-            <script src="https://status.cafe/current-status.js?name=2405" defer></script>
-          </div>
+        <div class="footer">
+          <img src="/IMAGES/stamps/webbadge/213374u.png" />
+          <img src="/IMAGES/stamps/webbadge/404notfound1.gif" />
+          <img src="/IMAGES/stamps/webbadge/american.gif" />
+          <img src="/IMAGES/stamps/webbadge/aries1.gif" />
+          <img src="/IMAGES/stamps/webbadge/explicit.png" />
+          <img src="/IMAGES/stamps/webbadge/firefox_copy1.png" />
+          <img src="/IMAGES/stamps/webbadge/hand_coded.png" />
+          <img src="/IMAGES/stamps/webbadge/hhgttg.png" />
+          <img src="/IMAGES/stamps/webbadge/nasa2.gif" />
+          <img src="/IMAGES/stamps/webbadge/nin.png" />
+          <img src="/IMAGES/stamps/webbadge/seasonautumn.gif" />
+          <img src="/IMAGES/stamps/webbadge/tropicana.gif" />
         </div>
-        <div class="contain" style="grid-column: 5 / 7">
-          <h2>// Appreciation Speaker</h2>
-          <div class="text">
-            <h3><time datetime="2024-02-05">02.05.24</time></h3>
-            <p>My favorite author gave me permission to complete a project based off of her work :) I'm ver excited.</p>
-            <p style="text-align: right; margin: 0; padding: 0">
-              <a href="/binder/nice-things-archive.html">archive</a>
-            </p>
-          </div>
-        </div>
-        <div style="grid-column: 1/7"><div style="padding: 1%; background-image: url(/IMAGES/pixel/da10.gif)"></div></div>
       </div>
-      <div class="emptyspace"></div>
+      <div class="col-2"></div>
     </main>
-  </body> -->
+    <a href="javascript:void(0)" id="close-nav" class="nav-toggle plate" onclick="closeNav()">&times;</a>
+    <div class="nav-toggle plate" id="open-nav" onclick="openNav()">&#9776;</div>
+    <script>
+      function openNav() {
+        document.getElementById("navigation").style.display = "initial";
+        document.getElementById("close-nav").style.display = "initial";
+        document.getElementById("open-nav").style.display = "none";
+        document.getElementById("main").style.display = "none";
+      }
+
+      /* Set the width of the sidebar to 0 (hide it) */
+      function closeNav() {
+        document.getElementById("navigation").style.display = "none";
+        document.getElementById("close-nav").style.display = "none";
+        document.getElementById("open-nav").style.display = "initial";
+        document.getElementById("main").style.display = "initial";
+      }
+    </script>
+  </body>
 </html>
